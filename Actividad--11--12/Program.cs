@@ -36,6 +36,66 @@ namespace Actividad__11__12
             Console.WriteLine("Informe de Fundación: " + ObjBeneficiario.GetInformeFundacion());
             Console.WriteLine();
             Console.ReadLine();
+
+            instanciarObjeto();
+        }
+
+        private static void instanciarObjeto()
+        {
+
+            Console.Clear();
+            Console.WriteLine("Bienvenido al sistema de gestión de beneficiarios.");
+            Console.WriteLine();
+            Console.WriteLine("Por favor, complete la siguiente información para crear un nuevo beneficiario.");
+            Console.WriteLine();
+            Console.WriteLine("Ingrese un IdBeneficiario: ");
+            string idBeneficiario = Console.ReadLine();
+            Console.WriteLine();
+            Console.WriteLine("Ingrese un nuevo Beneficiario: ");
+            Console.WriteLine();
+            Console.Write("Ingrese el nombre: ");
+            string nombre = Console.ReadLine();
+            Console.WriteLine();
+            Console.WriteLine("Ingrese el apellido: ");
+            string apellido = Console.ReadLine();
+            Console.WriteLine();
+            Console.WriteLine("Ingrese la fecha de nacimiento (formato: AAAA, MM, DD): ");
+            string fechanacimineto = Console.ReadLine();
+            Console.WriteLine();
+            Console.WriteLine("Ingrese el teléfono: ");
+            string telefono = Console.ReadLine();
+            Console.WriteLine();
+            Console.WriteLine("Ingrese la dirección: ");
+            string direccion = Console.ReadLine();
+            Console.WriteLine();
+            Console.WriteLine("Ingrese el historial médico: ");
+            string historialmedico = Console.ReadLine();
+            Console.WriteLine();
+            Console.WriteLine("Ingrese el informe de la fundación: ");
+            string informefundacion = Console.ReadLine();
+            Console.WriteLine();
+
+ 
+
+            Beneficiario OBJETOBeneficiario = new Beneficiario(idBeneficiario, nombre, apellido, fechanacimineto, telefono,
+                direccion, historialmedico, informefundacion);
+            Console.WriteLine("Beneficiario creado con éxito:");
+            Console.WriteLine("ID Beneficiario: " + OBJETOBeneficiario.idBeneficiario);
+            Console.WriteLine("Nombre: " + OBJETOBeneficiario.nombre);
+            Console.WriteLine("Apellido: " + OBJETOBeneficiario.apellido);
+            Console.WriteLine("Fecha de Nacimiento: " + OBJETOBeneficiario.fechanacimineto);
+            Console.WriteLine("Teléfono: " + OBJETOBeneficiario.telefono);
+            Console.WriteLine("Dirección: " + OBJETOBeneficiario.direccion);
+            Console.WriteLine("Historial Médico: " + OBJETOBeneficiario.GetHistorialMedico());
+            Console.WriteLine("Informe de Fundación: " + OBJETOBeneficiario.GetInformeFundacion());
+            Console.WriteLine();
+            Console.WriteLine("Presione cualquier tecla para continuar...");
+            Console.ReadKey();
+
+
+
+
+           
         }
     }
 }

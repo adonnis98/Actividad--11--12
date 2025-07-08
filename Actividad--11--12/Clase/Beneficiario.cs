@@ -46,10 +46,7 @@ namespace Actividad__11__12.Clase
                 return "codigo incorrecto";
             }
         }
-        public void SetHistorialMedico(string historialmedico)
-        {
-            this.historialmedico = historialmedico;
-        }
+     
 
 
         public string GetInformeFundacion()
@@ -67,12 +64,8 @@ namespace Actividad__11__12.Clase
                 return "codigo incorrecto";
             }
         }
-
-        public void SetInformeFundacion(string informefundacion)
-        {
-            this.Informefundacion = informefundacion;
-        }
      
     }
 
 }
+        
